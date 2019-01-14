@@ -1,0 +1,226 @@
+@font-face {
+  font-family:Suez;
+  src: url(../fuentes/SuezOne-Regular.ttf);
+}
+@font-face {
+  font-family: MitrRegular;
+  src:url(../fuentes/Mitr-Regular.ttf);
+}
+@font-face {
+  font-family: MitrLight;
+  src:url(../fuentes/Mitr-Light.ttf);
+}
+:root{
+  --rojo:#c42659;
+  --azul:#1b3a59;
+}
+*{
+  padding:0px;
+  margin:0px;
+  box-sizing:border-box;
+}
+/*--------------_CONTENEDOR---------*/
+.wrapper{
+  width:100%;
+}
+/*-------------------MENU----------------*/
+.menu{
+  width:100%;
+  /*---box-shadow: 10px 0px 10px rgba(0,0,0,0.2);---*/
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+#active{
+  width:500px;
+  height:500px;
+  position:absolute;
+  left:0px;
+  right:0px;
+  top:0px;
+  bottom:0px;
+  margin:auto;
+}
+.contenedormenu{
+  width:100%;
+  max-width:1400px;
+  margin:auto;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-flow:row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.logomenu{
+  padding:10px
+}
+.logomenu img{
+  width:60px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+.btnmenu{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  padding:0px 30px;
+}
+.btnmenu a{
+  padding:10px;
+  text-decoration:none;
+  color:white;
+  font-family: Suez;
+  position:relative;
+}
+.btnmenu a::after{
+  content:"";
+  display: block;
+  width:0px;
+  height:3px;
+  background:var(--rojo);
+  position:absolute;
+  bottom:0px;
+  left:50%;
+  border-radius: 4px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.btnmenu a:hover::after{
+  width:100%;
+  left:0px;
+}
+.fixed{
+  position:fixed;
+  background:var(--azul);
+  padding:0px;
+}
+
+/*------------------HEADER---------------*/
+#top{
+  width:100%;
+  height:100vh;
+  background-image:url(../img/nubesuno.png);
+  background-position: center bottom;
+  background-repeat:no-repeat;
+  background-size: 100%;
+}
+#yellow{
+  background-image: url(../img/back.svg);
+  background-position: center bottom;
+  background-size:cover;
+  background-repeat:no-repeat;
+  width:100%;
+  height:100vh;
+  position:fixed;
+  z-index:-50;
+}
+#stars{
+  background-image:url(../img/stars.png);
+  background-position: center center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  width:100%;
+  height:100vh;
+  position:fixed;
+  z-index:-10;
+}
+#crosses{
+  background-image:url(../img/croosses.png);
+  background-position: center center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  width:100%;
+  height:100vh;
+  position:fixed;
+  z-index:-1;
+}
+#nubesdos{
+  background-image:url(../img/nubesdos.png);
+  background-position: center bottom;
+  background-size:100%;
+  background-repeat:no-repeat;
+  width:100%;
+  height:100vh;
+  position:fixed;
+  z-index:-5;
+
+}
+#nave{
+  background-image:url(../img/nave.png);
+  background-position: center center;
+  background-size:300px;
+  background-repeat:no-repeat;
+  width:100%;
+  height:100vh;
+  position:fixed;
+  z-index:-5;
+
+}
+#resplandor{
+  background-image:url(../img/resplandor.png);
+  background-position: center center;
+  background-size:contain;
+  background-repeat:no-repeat;
+  width:100%;
+  height:100vh;
+  position:fixed;
+  z-index:-15;
+  opacity: 0.2;
+
+}
+/*----------------------------TXT----UNO---------*/
+.about{
+  width:100%;
+  background:white;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-flow:row wrap;
+  justify-content: center;
+}
+.aboutcont{
+  width:100%;
+  max-width:1400px;
+  padding:100px 20px 100px 20px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-flow:column;
+  align-items:center;
+  justify-content: center;
+}
+.abouttitulo{
+  width:50%;
+}
+.abouttitulo h1{
+  font-family: Suez;
+  font-size:2em;
+  color:var(--rojo);
+}
+
+.abouttxt{
+  width:50%;
+}
+.abouttxt p{
+  font-family:MitrLight;
+  font-size:1.2em;
+  padding:20px 0px;
+  text-align: justify;
+  color:var(--azul);
+}
+#vector{
+  background:var(--azul);
+}
+#vector h1{
+  color:white;
+}
+#vector ul{
+  font-family:MitrLight;
+  font-size:1.2em;
+  color:white;
+  list-style:square;
+}
