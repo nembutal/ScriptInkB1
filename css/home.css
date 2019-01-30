@@ -23,6 +23,32 @@
 .wrapper{
   width:100%;
 }
+/*-------MENURESPONSIVE-------*/
+.barramenu{
+  width:100%;
+  display: none;
+}
+.barrabtn{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+.barrabtn a{
+  padding:10px;
+  color:white;
+  text-decoration:none;
+}
+.barrabtn a:hover{
+  color:var(--rojo);
+}
+#cerrar{
+  display: none;
+}
+#cerrar, #abrir{
+  cursor:pointer;
+  font-size:1.2em;
+}
+
 /*-------------------MENU----------------*/
 .menu{
   width:100%;
@@ -212,15 +238,205 @@
   text-align: justify;
   color:var(--azul);
 }
-#vector{
+.txtbtn{
+  width:50%;
+  padding:20px 0px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: flex-end;
+}
+.txtbtn a{
+  color:var(--azul);
+  font-family: Suez;
+  font-size:1.2em;
+  text-decoration: none;
+}
+/*---------------------TXT----vector----*/
+.vector{
+  width:100%;
+}
+.vectorcont{
+  width:100%;
+  max-width:1400px;
+  margin:auto;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-flow:row wrap;
+  justify-content:center;
+}
+.vectorcont img{
+  width:800px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  padding-top:100px;
+}
+/*---------------------TXT----DOS----*/
+.txtdos{
+  width:100%;
   background:var(--azul);
 }
-#vector h1{
-  color:white;
+.txtdoscont{
+  width:100%;
+  max-width:1400px;
+  margin:auto;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-flow:column;
+  align-items:center;
 }
-#vector ul{
+.txtdostitulo{
+  padding:10px 10px 10px 10px;
+  width:50%;
+}
+.txtdostitulo h1{
+  width:100%;
+  color:white;
+
+  font-family:Suez;
+  font-size:2em;
+}
+.txtdosp{
+  width:50%;
+  padding:30px 10px;
+}
+.txtdosp ul{
+  list-style:none;
+  text-align: justify;
+}
+.txtdosp li{
+  color:white;
   font-family:MitrLight;
   font-size:1.2em;
-  color:white;
-  list-style:square;
 }
+.txtdosbtn{
+  width:100%;
+  padding:20px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: flex-end;
+  width:50%;
+}
+.txtdosbtn a{
+  color:white;
+  font-family: Suez;
+  font-size:1.2em;
+  text-decoration: none;
+}
+#indice{
+  padding-top:50px;
+}
+.web{
+  width:100%;
+  background:#ffffff;
+  padding:100px 0px 0px 0px;
+}
+.webcont{
+  width:1000px;
+  max-width:1400px;
+  margin:auto;
+}
+.webcont img{
+  width:1000px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+
+}
+.weblogos{
+  width:100%;
+  background:white;
+  padding:0px 0px 50px 0px;
+
+}
+.weblogoscont{
+  width:100%;
+  max-width:1400px;
+  margin:auto;
+  text-align: center;
+}
+/*-------------------FOOTER--------------*/
+.footer{
+  width:100%;
+  background:var(--azul);
+}
+.footercont{
+  width:100%;
+  max-width:1400px;
+  margin:auto;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-flow:row wrap;
+  justify-content:space-between;
+  align-items:center;
+}
+.footerlogo{
+
+  padding:10px;
+}
+.footerlogo img{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  padding:10px;
+}
+.footerredes{
+
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  padding:10px;
+}
+.footerredes a{
+  padding:10px;
+  color:white;
+  text-decoration:none;
+  font-family:MitrRegular;
+  font-size:1.2em;
+}
+
+
+/*----------------------RESPONSIVE-----------*/
+@media screen and (max-width:800px){
+  .barramenu{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu{
+
+    padding:10px;
+  }
+  .contenedormenu{
+
+    justify-content: flex-start;
+    padding:0x;
+    overflow:hidden;
+  }
+  .logomenu{
+    display: none;
+  }
+  .logomenu img{
+    display: none;
+
+  }
+  .btnmenu{
+
+    flex-flow:column;
+    width:100%;
+    max-height:0px;
+  }
+  .btnmenu a::after{
+    display: none;
+  }
+  .btnmenu a:hover{
+    color:var(--rojo);
+  }
