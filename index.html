@@ -10,6 +10,36 @@
   <title>ScriptInk</title>
 </head>
 <body>
+
+  <!-----------------MODALhtml------------->
+  <div class="fondomodal" id="fondomodal" onclick="cerrarModal('fondomodal', 'modal');"></div>
+  <div class="modal" id="modal">
+    <div class="cerrarmodal">
+      <a onclick="cerrarModal('fondomodal', 'modal');" class="icon-cross"></a>
+    </div>
+    <div class="contactologo">
+      <div class="contenedorcont">
+        <img src="img/cont-logo.png" alt="" width="450px">
+      </div>
+    </div>
+    <div class="contactotxt">
+      <div class="txtcontuno">
+        <p>
+          Para cotizar alguno de nuestros servicios, puedes escribirnos a nuestro correo
+          <span id="mail">script.ink00@gmail.com</span>, o si lo prefieres, en alguna de nuestras redes sociales:
+        </p>
+      </div>
+      <div class="redescont">
+        <a href="" class="icon-behance2"></a>
+        <a href="" class="icon-facebook2"></a>
+        <a href="" class="icon-google2"></a>
+      </div>
+
+    </div>
+  </div>
+  <!-----------------MODALhtml------------->
+
+
   <div id="yellow"></div>
   <div id="crosses"></div>
   <div id="stars"></div>
@@ -40,12 +70,12 @@
       </nav>
       <section class="contenedormenu">
         <div class="logomenu">
-          <img src="img/logosup.png" alt="">
+          <img src="img/logofoot.png" alt="">
         </div>
         <div class="btnmenu" id="btnmenu">
           <a href="">Vectores</a>
           <a href="">Diseño web</a>
-          <a href="">Contacto</a>
+          <a onclick="abrirModal('fondomodal', 'modal');">Contacto</a>
         </div>
       </section>
     </nav>
@@ -54,7 +84,7 @@
   <section class="about" id="about">
     <section class="aboutcont">
       <div class="abouttitulo">
-        <h1><span class="icon-libreoffice"></span> «1»</h1>
+        <h1>«1»</h1>
       </div>
       <div class="abouttitulo">
         <h1>Acerca de nosotros</h1>
@@ -72,7 +102,7 @@
         </p>
       </div>
       <div class="txtbtn" id="abouttxt">
-        <a href="">«Más»</a>
+        <a onclick="abrirModal('fondomodal', 'modal');">«Más»</a>
       </div>
     </section>
   </section>
@@ -92,7 +122,7 @@
       <section class="txtdos">
         <section class="txtdoscont">
           <div class="txtdostitulo" id="indice">
-            <h1> <span class="icon-pen"></span> «2»</h1>
+            <h1>«2»</h1>
           </div>
 
           <div class="txtdostitulo">
@@ -122,7 +152,9 @@ manejamos optimos tiempos de entrega, precios justos y calidad de trazo.
       <!-----------------------TEXTO---UNO------------>
         <section class="web" id="web">
           <section class="webcont">
-            <img src="img/webimg.png" alt="">
+                <div class="imgcontweb">
+                    <img src="img/webimg.png" alt="" width="700px">
+                </div>
           </section>
 
         </section>
@@ -132,7 +164,7 @@ manejamos optimos tiempos de entrega, precios justos y calidad de trazo.
         <section class="about" id="about">
           <section class="aboutcont">
             <div class="abouttitulo">
-              <h1><span class="icon-terminal"></span> «3»</h1>
+              <h1>«3»</h1>
             </div>
             <div class="abouttitulo">
               <h1>Diseño web</h1>
@@ -154,12 +186,20 @@ manejamos optimos tiempos de entrega, precios justos y calidad de trazo.
         </section>
         <!-----------------------TEXTO---UNO------------>
         <!-----------------------TEXTO---UNO------------>
-          <section class="weblogos" id="weblogos">
+    <!----      <section class="weblogos" id="weblogos">
             <section class="weblogoscont">
-              <img src="img/logos_p.png" alt="">
+              <div class="logoitem">
+                  <img src="img/html-item.png"  width="100px" alt="">
+              </div>
+              <div class="logoitem">
+                  <img src="img/css-item.png"  width="100px" alt="">
+              </div>
+              <div class="logoitem">
+                  <img src="img/js-item.png"  width="100px" alt="">
+              </div>
             </section>
 
-          </section>
+          </section>------->
           <!-----------------------TEXTO---UNO------------>
           <!-------------------FOOTER------------->
           <footer class="footer">
@@ -168,9 +208,9 @@ manejamos optimos tiempos de entrega, precios justos y calidad de trazo.
               <img src="img/logofoot.png" alt="" width="200px">
             </div>
             <div class="footerredes">
-              <a href="" class="icon-instagram"></a>
+              <a href="" class="icon-behance2"></a>
               <a href="" class="icon-facebook2"></a>
-              <a href="" class="icon-whatsapp"></a>
+              <a href="" class="icon-google2"></a>
             </div>
           </div>
           </footer>
@@ -189,5 +229,6 @@ manejamos optimos tiempos de entrega, precios justos y calidad de trazo.
   </div>
 <script src="js/parallax.js"></script>
 <script src="js/menu.js"></script>
+<script src="js/modal.js"></script>
 </body>
 </html>

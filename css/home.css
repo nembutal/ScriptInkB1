@@ -23,6 +23,97 @@
 .wrapper{
   width:100%;
 }
+a{
+  cursor:pointer;
+}
+/*--------------------ESTILOSMODAL-------------*/
+.fondomodal{
+  left:0px;
+  right:0px;
+  bottom:0px;
+  top:0px;
+  margin:auto;
+  opacity:0;
+  display: none;
+  width:100%;
+  height:100vh;
+  background:rgba(0,0,0,0.8);
+  position:fixed;
+  z-index:100;
+}
+
+.modal{
+  opacity:0;
+  display: none;
+  width:800px;
+  max-height:500px;
+  background:white;
+  left:0px;
+  right:0px;
+  top:0px;
+  bottom:0px;
+  margin:auto;
+  position:fixed;
+  z-index:110;
+}
+.contactologo{
+  width:100%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  padding:70px 0px;
+}
+.contactologo img{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+.contactotxt{
+
+  max-width:600px;
+  margin:auto;
+}
+.contactotxt p{
+  font-family:MitrLight;
+  font-size:1.2em;
+  text-align: justify;
+  color:var(--azul);
+}
+#mail{
+  color:var(--rojo);
+  font-family: MitrRegular;
+}
+.redescont{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content:center;
+  padding:40px 0px 40px 0px;
+}
+.redescont a{
+  text-decoration:none;
+  color:var(--azul);
+  font-size:2em;
+  padding:10px;
+}
+.cerrarmodal{
+  position:absolute;
+  right:10px;
+  top:10px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+.cerrarmodal a{
+  padding:10px;
+  text-decoration: none;
+  color:white;
+  background:var(--rojo);
+}
+
+/*--------------------ESTILOSMODAL-------------*/
+
 /*-------MENURESPONSIVE-------*/
 .barramenu{
   width:100%;
@@ -83,7 +174,7 @@
   padding:10px
 }
 .logomenu img{
-  width:60px;
+  width:200px;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
@@ -153,6 +244,7 @@
   height:100vh;
   position:fixed;
   z-index:-10;
+  overflow:hidden;
 }
 #crosses{
   background-image:url(../img/croosses.png);
@@ -163,6 +255,7 @@
   height:100vh;
   position:fixed;
   z-index:-1;
+  overflow:hidden;
 }
 #nubesdos{
   background-image:url(../img/nubesdos.png);
@@ -173,6 +266,7 @@
   height:100vh;
   position:fixed;
   z-index:-5;
+  overflow:hidden;
 
 }
 #nave{
@@ -277,6 +371,7 @@
 .txtdos{
   width:100%;
   background:var(--azul);
+  padding-bottom:50px;
 }
 .txtdoscont{
   width:100%;
@@ -333,32 +428,52 @@
 .web{
   width:100%;
   background:#ffffff;
-  padding:100px 0px 0px 0px;
 }
 .webcont{
-  width:1000px;
-  max-width:1400px;
+  max-width:1440px;
   margin:auto;
-}
-.webcont img{
-  width:1000px;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
   justify-content: center;
+  padding:150px 50px 50px 50px;
+}
+.imgcontweb{
 
+}
+.webcont img{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
 }
 .weblogos{
+  background:#ffffff;
   width:100%;
-  background:white;
-  padding:0px 0px 50px 0px;
-
 }
 .weblogoscont{
-  width:100%;
   max-width:1400px;
   margin:auto;
-  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+}
+.logoitem{
+  margin:50px;
+}
+.logotitem img{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.logoitem img:hover{
+  transform:scale(1.1);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 /*-------------------FOOTER--------------*/
 .footer{
@@ -398,7 +513,7 @@
   color:white;
   text-decoration:none;
   font-family:MitrRegular;
-  font-size:1.2em;
+  font-size:1.5em;
 }
 
 
@@ -439,4 +554,42 @@
   }
   .btnmenu a:hover{
     color:var(--rojo);
+  }
+  /*-----------------------CONTENIDO---------*/
+  .vectorcont img{
+    width: 100%;
+  }
+  .imgcontweb img{
+    width: 100%;
+  }
+
+  .logoitem{
+    margin:20px;
+  }
+  .abouttxt{
+    width:100%;
+  }
+  .txtbtn{
+    width:100%;
+  }
+  .abouttitulo{
+    width:100%;
+  }
+  .txtdostitulo{
+    width:100%;
+    padding:10px 20px;
+  }
+  .txtdosp{
+    width:100%;
+    padding:10px 20px;
+  }
+  .txtdosbtn{
+    width:100%;
+    padding:10px 20px;
+  }
+  @media screen and (max-width:500px){
+    .weblogoscont{
+      flex-flow:column;
+      align-items:center;
+    }
   }
